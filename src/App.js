@@ -229,7 +229,7 @@ class MainApp extends Component {
                       reset={this.handleReset}
                     />
                   </Container>
-                  <div className="divider grey-bg"></div>
+
                   <Container>
                     <BureauPe bureauItem={this.state.bureau} />
                     {this.state.notFound && (
