@@ -9,10 +9,10 @@ export default function BureauPe (props)  {
 
                     {
                         Object.keys(bureauItem).length !==0 &&
-                        <Container className="bureau-container">
+                        <Container className="bureau-container" style={{ padding: '10px', marginTop: '0px' }}>
     
                         <div className="title-pe">
-                            <h1 className="bold">{bureauItem.nomPE}</h1>
+                            <h1 className="bold" style={{ fontSize: '20px', marginBottom: 'inherit' }}>{bureauItem.nomPE}</h1>
                         </div>
                         <div className="content-pole-expert">
                             {<Row>

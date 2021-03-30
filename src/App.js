@@ -216,11 +216,11 @@ class MainApp extends Component {
                         <Modal.Header  closeButton>
                         </Modal.Header>
                         <Modal.Body>
-                        <div className="popup-expert-main">
+                        <div className="popup-expert-main" style={{ margin: 'inherit' }}>
                             <Container>
                                 <Row>
                                     <Col className="section-title">
-                                        <h1 className="mt-0">Jours de passage de l'expert</h1>
+                                        <h1 className="mt-0" style={{ margin: '40px 0 40px' }}>Jours de passage de l'expert</h1>
                                     </Col>
                                 </Row>
                                 <FormBca 
@@ -235,15 +235,16 @@ class MainApp extends Component {
                             </Container>
 
                             <Container>
+                                <PassageList passageItems={this.state.jourDePassage} />
+                            </Container>
+
+                            <Container>
                                 <BureauPe bureauItem={this.state.bureau} />
                                 {
                                     this.state.notFound &&
                                     <span>le code postal {this.state.postalCodeDisplay} ne correspond pas à un bureau distributeur</span>
                                 }
                                 
-                            </Container>
-                            <Container>
-                                <PassageList passageItems={this.state.jourDePassage} />
                             </Container>
                         </div>
                         </Modal.Body>
